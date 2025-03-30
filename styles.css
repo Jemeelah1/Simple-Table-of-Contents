@@ -1,0 +1,54 @@
+.toc-sidebar {
+  width: 200px;
+  padding: var(--codex-spacing-medium);
+  border-right: 1px solid var(--codex-border-color-base);
+  margin-right: var(--codex-spacing-large);
+  float: left;
+}
+
+.toc-sidebar h3 {
+  @apply heading-small;
+  margin-bottom: var(--codex-spacing-small);
+}
+
+.toc-sidebar .codex-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc-sidebar .codex-list > li > a {
+  display: block;
+  padding: var(--codex-spacing-extra-small) 0;
+  color: var(--codex-text-color-primary);
+  text-decoration: none;
+}
+
+.toc-sidebar .codex-list > li > a:hover {
+  text-decoration: underline;
+}
+
+.toc-sidebar .codex-list--nested {
+  padding-left: var(--codex-spacing-medium);
+}
+
+.toc-sidebar .codex-list--nested > li > a {
+  font-size: 0.9em;
+  padding: var(--codex-spacing-extra-extra-small) 0;
+}
+
+.main-article {
+  /* Styles for the main article content */
+  margin-left: 250px + var(--codex-spacing-large);
+  padding: var(--codex-spacing-medium);
+}
+
+/* Codex Spacing Tokens */
+:root {
+  --codex-spacing-extra-extra-small: 0.25rem;
+  --codex-spacing-extra-small: 0.5rem;
+  --codex-spacing-small: 0.75rem;
+  --codex-spacing-medium: 1rem;
+  --codex-spacing-large: 1.5rem;
+  --codex-border-color-base: #ccc;
+  --codex-text-color-primary: #333;
+}
